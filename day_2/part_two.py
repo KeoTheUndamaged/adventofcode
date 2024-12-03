@@ -6,7 +6,7 @@ if __name__ == "__main__":
 
     data = []
     f = open('./input.txt', 'r')
-    reader = csv.reader(f, quoting=csv.QUOTE_NONNUMERIC)
+    reader = csv.reader(f, delimiter=' ', quoting=csv.QUOTE_NONNUMERIC)
     for row in reader:
         data.append(row)
 

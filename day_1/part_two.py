@@ -4,7 +4,7 @@ import pandas as pd
 
 if __name__ == '__main__':
     # import list
-    input_df = pd.read_csv("input.txt", sep=',', header=None, names=['list_one', 'list_two'])
+    input_df = pd.read_csv("input.txt", sep='\t', header=None, names=['list_one', 'list_two'])
     # create an empty DataFrame to hold data for calculation.
     output = pd.DataFrame()
     # copy 'list_one' to the output DataFrame
